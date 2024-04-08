@@ -2370,6 +2370,9 @@ hr {
   text-transform: capitalize;
   margin-bottom: 25px;
 }
+.slider-area .hero__caption2 h1 {
+  font-size: 48px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .hero__caption h1 {
     font-size: 55px;
@@ -5906,4 +5909,8 @@ del {
 }
 .switch-wrap {
   margin-bottom: 10px;
+}
+
+#map iframe {
+  width: 100%;
 }
