@@ -5994,7 +5994,7 @@ del {
     z-index: 9001;
     right: 0;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     top: 0;
 }
 
@@ -6125,12 +6125,12 @@ del {
     border-bottom: none;
 }
 
-.header-nav {
+/* .header-nav {
     height: 0;
     position: fixed;
     width: 100%;
     z-index: 9000;
-}
+} */
 
 .header-nav ul {
     background: #e9faf2;
