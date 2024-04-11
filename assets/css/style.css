@@ -2199,10 +2199,6 @@ hr {
   background: transparent;
   color: #0cb2b0;
 }
-.slicknav_menu {
-  background: transparent;
-  margin-top: 5px !important;
-}
 .mobile_menu {
   position: absolute;
   right: 0px;
@@ -6188,7 +6184,11 @@ del {
   color: #0cb2b0;
 }
 
-
+@media (max-width: 767px) {
+  .gaadiexp{
+    display: none;
+  }
+}
 
 /** timeline steps **/
 
