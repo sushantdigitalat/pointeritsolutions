@@ -2779,6 +2779,12 @@ hr {
 .we-create-area .we-create-cap-2 h3{
   padding: 0 0 10px 0;
 }
+.we-create-cap-3{
+  padding: 0 100px 0 0;
+}
+.we-create-img img{
+  max-width: 60%;
+}
 .step-h5{
   color: #0cb2b0;
 }
