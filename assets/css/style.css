@@ -2783,7 +2783,8 @@ hr {
   padding: 0 100px 0 0;
 }
 .we-create-img img{
-  max-width: 60%;
+  max-width: 100%;
+  max-height: 260px;
 }
 .step-h5{
   color: #0cb2b0;
@@ -2919,7 +2920,7 @@ hr {
 .choose-best {
   position: relative;
 }
-.choose-best::before {
+/* .choose-best::before {
   background-image: url(../img/shape/choose_your.png);
   position: absolute;
   content: "";
@@ -2957,6 +2958,7 @@ hr {
   left: 100px;
   bottom: 0;
   animation: heartbeat 1s infinite alternate;
+  display: none;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .choose-best::after {
@@ -2983,7 +2985,7 @@ hr {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
-}
+} */
 .choose-best .single-choose {
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
