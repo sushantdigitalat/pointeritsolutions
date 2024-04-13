@@ -340,7 +340,7 @@ hr {
   line-height: 0;
   margin-bottom: 0;
   padding: 20px 30px;
-  border-radius: 5px;
+  border-radius: 0;
   min-width: 200px;
   cursor: pointer;
   transition: color 0.4s linear;
@@ -359,7 +359,7 @@ hr {
   height: 100%;
   background: #0cb2b0;
   z-index: 1;
-  border-radius: 5px;
+  border-radius: 0;
   transition: transform 0.5s;
   transition-timing-function: ease;
   transform-origin: 0 0;
@@ -532,12 +532,11 @@ hr {
   position: fixed;
   top: 0;
   width: 100%;
-  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  /* -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1); */
   z-index: 9999;
   -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   background: #e9faf2;
 }
 .mt-5 {
@@ -2597,8 +2596,10 @@ hr {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  padding: 56px 40px 69px;
-  border-radius: 6px;
+  padding: 20px;
+  /* border-radius: 6px; */
+  background-color: #e9faf2;
+  border: 1px solid #0cb2b0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .what-we-do .single-do {
@@ -2627,9 +2628,9 @@ hr {
   color: #0cb2b0;
 }
 .what-we-do .single-do .do-caption h4 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 23px;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .what-we-do .single-do .do-caption h4 {
@@ -2644,7 +2645,9 @@ hr {
 }
 .what-we-do .single-do .do-btn a,
 .choose-best .single-choose .do-btn a {
-  color: #0cb2b0;
+  background-color: #0c6c63;
+  color: #fff;
+  padding: 10px 20px;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
@@ -2992,10 +2995,10 @@ hr {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  padding: 30px 40px 30px;
-  border: 1px solid #ececec;
-  border-radius: 6px;
-  background: #fff;
+  padding: 20px 20px 40px 20px;
+  border: 1px solid #0cb2b0;
+  /* border-radius: 6px; */
+  background-color: #e9faf2;
 }
 .choose-best .single-choose .do-icon span {
   font-size: 73px;
@@ -3011,15 +3014,45 @@ hr {
   display: inline-block;
 }
 .choose-best .single-choose .do-caption h4 {
-  font-size: 24px;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #0c6c63;
+  line-height: 1.4;
+}
+.choose-best .single-choose .do-caption h5 {
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
   color: #0c6c63;
   line-height: 1.4;
 }
+.choose-best .single-choose .do-caption ul{
+  min-height: 280px;
+}
 .choose-best .single-choose .do-caption ul li {
   color: #57667e;
-  margin-bottom: 10px;
+  text-align: left;
+  position: relative;
+  padding: 0 0 10px 25px;
+}
+.choose-best .single-choose .do-caption ul li::before{
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: "\e64c";
+  font-family: "themify";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 14px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .choose-best .single-choose .do-caption ul li:last-child {
   margin-bottom: 0;
