@@ -2,87 +2,866 @@
 <html class="no-js" lang="zxx">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Pointer IT Solutions – Digital Growth Marketing Solutions</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Pointer IT Solutions – Digital Growth Marketing Solutions</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-  <!-- CSS here -->
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
-    body {
-      background-color: #e9faf2;
-      font-family: "Rubik", sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Rubik", sans-serif;
-      color: #0c6c63;
-      margin-top: 0px;
-      font-style: normal;
-      font-weight: 500;
-      text-transform: normal;
-    }
-
-    p {
-      font-family: "Rubik", sans-serif;
-      color: #707b8e;
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 15px;
-      font-weight: normal;
-    }
-
-    .layout-align {
-      width: 400px !important;
-      margin: 50px auto auto;
-      text-align: center;
-    }
-
-    .logo-box .logo {
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box;
-      align-content: center;
-      padding: 0 0 30px;
-    }
-
-    .panel-body h2 {
-      font-weight: 600;
-      color: #0c6c63;
-    }
-
-    .mt-2 {
-      margin-top: 20px;
-    }
-  </style>
-  </head>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
 
 <body>
-  <div class="layout-align">
-
-          <div class="logo-box">
-            <div class="logo">
-              <img src="assets/img/main-vector.png" alt="main-vector">
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/logo.png" alt="" />
+                </div>
             </div>
-          </div>
-          <h2>Website updation!</h2>
-          <p>We're currently updating our website, so we've brought a few pages down for schedule maintenance. Please try
-            again later. </p>
-          <img src="assets/img/logo.png" alt="logo" width="120">
-          <h4 class="mt-2">Thank you for your patience!</h4>
-          </div>
-  </body>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparrent">
+            <div class="main-header header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo_tr.png" alt="logo_tr" /></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="digital-presence.html">Digital Presence</a></li>
+                                        <li><a href="digital-growth.html">Digital Growth</a></li>
+                                        <li><a href="digital-transformation.html">Digital Transformation</a></li>
+                                        <li><a href="portfolio.html">Resources <i class="ti ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Blog</a></li>
+                                                <li><a href="#">Case Studies</a></li>
+                                                <li><a href="#">Wall of Love</a></li>
+                                                <li><a href="#">Free Tools</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Growth Academy <i class="ti ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Courses</a></li>
+                                                <li><a href="#">Webinars</a></li>
+                                                <li><a href="#">PDFs</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3">
+                            <div class="header-right-btn f-right d-none d-lg-block">
+                                <a href="#" class="btn header-btn">Let's Grow <i class="ti-angle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="mobile-nav" id="mobile-nav" class="gaadiexp-check"
+                                onchange="this.blur()">
+                            <label for="mobile-nav" class="gaadiexp white" tabindex="0"><span></span></label>
+                            <div role="navigation" class="header-nav">
+                                <div class="fixed-nav">
+                                    <div class="menu">
+                                        <ul>
+                                            <li class="page_item page-item-2">
+                                                <a href="dashboard.html" class="list-group-item">Who we are?</a>
+                                            </li>
+                                            <li class="page_item page-item-2">
+                                                <a href="profile.html" class="list-group-item ">What we do?</a>
+                                            </li>
+                                            <li class="page_item page-item-2">
+                                                <a href="wishlist.html" class="list-group-item">How we work?</a>
+                                            </li>
+                                            <li class="page_item page-item-2">
+                                                <a href="liftings.html" class="list-group-item">Our Work</a>
+                                            </li>
+                                            <li class="page_item page-item-2">
+                                                <a href="documents.html" class="list-group-item">Work with us </a>
+                                            </li>
+                                            <li class="page_item page-item-2">
+                                                <a href="payments.html" class="list-group-item">Reach Us </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    <main>
+        <!-- Slider Area Start-->
+        <div class="slider-area">
+            <div class="slider-active">
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-7 col-md-7">
+                                <div class="hero__caption">
+                                    <!-- <h2 class="letter-spacing mb-3">Digital Growth Agency for SMB</h2> -->
+                                    <h1 data-animation="fadeInLeft" data-delay=".4s">
+                                        <!-- Delivering <u>Profitable Growth & Transformation</u> using Modern Technologies! -->
+                                        <!-- Delivering Profitable Growth using <br> Modern Digital Technologies! -->
+                                        Welcome to Growapse.<br>
+                                        Digital Growth Agency <br>To Empower SMB.
+                                        <!-- To <span>Grow and Transform</span> <br>their Business Digitally <br>for
+                                                                                                                                                                                <span>Profitability!</span> -->
+                                    </h1>
+                                    <h5 data-animation="fadeInLeft" data-delay=".6s">
+
+                                        <!-- We are Technology Enabled. We are Growth Driven. We are SMB Focussed.-->
+                                        Delivering profitable growth with affordable engagement models for SMB.
+                                        <!-- Leveraging modern edge technologies and strategies to deliver <strong>Profitable Growth</strong>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <br> with affordable engagement models. -->
+
+                                        <!-- Technology and Digital Growth Experts for small-medium businesses to design, implement and scale
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <strong>Profitable Growth & Transformation Strategies </strong> with affordable engagement models.  -->
+                                        <!-- Design, Implement and Scale <strong> Growth & Transformation Strategies </strong> for their Profitability. -->
+                                        <!-- Leveraging Modern edge Digital Technologies to Grow and Transform your
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Small-Medium Business into
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Profitable Business
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        with affordable engagement models. -->
+                                        </p>
+                                        <!-- Hero-btn -->
+                                        <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
+                                            <a href="#" class="btn hero-btn">
+                                                Grow with Growapse <i class="ti-angle-right"></i>
+                                            </a>
+                                        </div>
+                                        </div>
+
+                            </div>
+                            <div class="col-lg-5 col-md-5">
+                                <div class="hero__img text-right " data-animation="fadeInRight" data-delay="1s" style="">
+                                    <img src="assets/img/hero/banner-2.jpg" alt="hero__img" />
+                                </div>
+                                <div class="h-banner mt-5 d-none">
+                                    <svg class="absolute-centered w-100" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 648 616"
+                                        style="enable-background:new 0 0 648 616;" xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: #e9faf2;
+                                            }
+                                        </style>
+                                    <path class="st0"
+                                        d="M617,425.6C538.8,622,285.4,656.9,91.2,571.9c-141-61.7-71.5-182.7-89.3-353C-18.1,28,123.4-22,295.5,8.1            C486,41.5,692.9,235,617,425.6z">
+                                    </path>
+                                    <g>
+                                        <defs>
+                                            <path id="banner-11"
+                                                d="M644.9,316.5c-30.8,189.2-243.1,270.7-426.7,234.3C84.9,524.3,122.2,403.5,75,256.4                C22,91.6,134.9,19.1,289.1,11.4C459.9,2.9,674.8,132.7,644.9,316.5z">
+                                            </path>
+                                        </defs>
+                                        <clippath id="banner-12">
+                                            <use xlink:href="#banner-11" style="overflow:visible;"></use>
+                                        </clippath>
+                                        <g style="clip-path:url(#banner-12);">
+                                            <image style="overflow:visible;" width="660" height="660" xlink:href="assets/img/hero/banner-2.jpg"> </image>
+                                        </g>
+                                    </g>
+                                    </svg></div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <!-- Slider Area End-->
+                                    <!-- We Create Start -->
+                                    <div class="what-we-do create-padding">
+                                        <div class="container">
+                                            <!-- Section-tittle -->
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-lg-8">
+                                                    <div class="section-tittle text-center mb-5">
+                                                        <span>AT Pointer IT Solutions </span>
+                                                        <h2 class="mb-3">We make technology drive transformation and deliver growth​</h2>
+                                                        <p>We understand challenges and limitations every SMB face
+                                                            when it comes to digital growth.
+                                                            Hence we partner with SMB's to take charge of their Digital Growth with affordable engagement
+                                                            models.
+                                                            <br>
+                                                            We are Growth Focused . We are Technology Enabled. We are Affordable.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="single-do text-center mb-30">
+                                                        <div class="do-icon">
+                                                            <span class="flaticon-tasks"></span>
+                                                        </div>
+                                                        <div class="do-caption">
+                                                            <h4>Digital Agency</h4>
+                                                            <p class="mb-3">Our agency for small and medium-sized businesses looking for next-level
+                                                                digital support.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="single-do text-center mb-30">
+                                                        <div class="do-icon">
+                                                            <span class="flaticon-social-media-marketing"></span>
+                                                        </div>
+                                                        <div class="do-caption">
+                                                            <h4>Growth Agency</h4>
+                                                            <p class="mb-3">Affordable, full-service digital marketing for small to medium-sized
+                                                                businesses all over India.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="single-do text-center mb-30">
+                                                        <div class="do-icon">
+                                                            <span class="flaticon-project"></span>
+                                                        </div>
+                                                        <div class="do-caption">
+                                                            <h4>Technology Division </h4>
+                                                            <p class="mb-3">Our proprietary technology that helps drive through innovation and
+                                                                efficiencies for our team.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="single-do text-center mb-30">
+                                                        <div class="do-icon">
+                                                            <span class="flaticon-project"></span>
+                                                        </div>
+                                                        <div class="do-caption">
+                                                            <h4>Academy</h4>
+                                                            <p class="mb-3">Our goal is to equip students with the knowledge and skills they need to
+                                                                succeed in the field of
+                                                                software
+                                                                development</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- We Create End -->
+                                    <div class="choose-best create-padding section-bg">
+                                        <div class="container">
+                                            <!-- Section-tittle -->
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-lg-8">
+                                                    <div class="section-tittle text-center mb-5">
+                                                        <span>Our Expertise </span>
+                                                        <h2 class="mb-3">Delivering profitable growth</h2>
+                                                        <p>
+                                                            Our expert team of Growth, Digital Media and Technology professionals are highly passionate
+                                                            about designing, executing and scaling a profitable Growth for SMB.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row d-flex-lg">
+                                                <div class="col-lg-3 col-md-6 pl-lg-0">
+                                                    <div class="single-choose text-center mb-30">
+                                                        <div class="do-icon">
+                                                            <span class="flaticon-growth"></span>
+                                                        </div>
+                                                        <div class="do-caption">
+                                                            <h4>Growth Consulting</h4>
+                                                            <ul>
+                                                                <li>Growth Strategy & Planning</li>
+                                                                <li>Brand Positioning</li>
+                                                                <li>Customer Aquisition</li>
+                                                                <li>Customer Retention</li>
+                                                                <li>Revenue Generation</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="do-btn">
+                                                            <a href="#">Learn More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 pl-lg-0">
+                                                    <div class="single-choose text-center mb-30">
+                                                        <div class="do-icon">
+                                                            <span class="flaticon-social-media-marketing"></span>
+                                                        </div>
+                                                        <div class="do-caption">
+                                                            <h4>Digital Marketing</h4>
+                                                            <ul>
+                                                                <li>Digital Presence</li>
+                                                                <li>Organic Search</li>
+                                                                <li>Organic Social</li>
+                                                                <li>Content Marketing</li>
+                                                                <li>Media Optimization</li>
+                                                                <li>Paid Search</li>
+                                                                <li>Paid Social</li>
+                                                                <li>Email Marketing</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="do-btn">
+                                                            <a href="#">Learn More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 pl-lg-0">
+                                                    <div class="single-choose text-center mb-30">
+                                                        <div class="do-icon">
+                                                            <span class="flaticon-project"></span>
+                                                        </div>
+                                                        <div class="do-caption">
+                                                            <h4>Digital Transformation</h4>
+                                                            <ul>
+                                                                <li>Business Processes</li>
+                                                                <li>Business Operations</li>
+                                                                <li>Customer Service</li>
+                                                                <li>Customer Experience</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="do-btn">
+                                                            <a href="#">Learn More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 pl-lg-0">
+                                                    <div class="single-choose text-center mb-30">
+                                                        <div class="do-icon">
+                                                            <span class="flaticon-tasks"></span>
+                                                        </div>
+                                                        <div class="do-caption">
+                                                            <h4>Web Development</h4>
+                                                            <ul>
+                                                                <li>Website Development</li>
+                                                                <li>Custom Application Development</li>
+                                                                <li>E-commerce Development</li>
+                                                                <li>Mobile App Development</li>
+                                                                <li>Product Development</li>
+                                                                <li>CRM Application</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="do-btn">
+                                                            <a href="#">Learn More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- What We do start-->
+                                    <div class="what-we-do create-padding section-bg-2">
+                                        <div class="container">
+                                            <!-- Section-tittle -->
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-lg-8">
+                                                    <div class="section-tittle text-center ">
+                                                        <h2 class="text-white mb-4">How we work for Your Business?​</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-lg-8">
+                                                    <p class="text-center text-white mb-4"> At Pointer IT Solutions, we are dedicated to propelling
+                                                        your business
+                                                        forward in
+                                                        the
+                                                        digital landscape. With our tailored strategies and innovative solutions, we ensure that
+                                                        your online presence not
+                                                        only thrives but also evolves to meet the ever-changing demands of the digital market.
+                                                        Here's how we work to
+                                                        accelerate your digital growth:
+                                                    </p>
+                                                    <div class="text-center mt-5">
+                                                        <a href="#" class="btn how-we-btn" tabindex="0">
+                                                            Let's Start with a Free Strategy Session <i class="ti-angle-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+            </div>
+            </div>
+            <!-- how We do End-->
+            <div class="we-create-area create-padding section-bg">
+                <div class="container">
+                    <!-- Section-tittle -->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-tittle text-center ">
+                                <h2 class=" mb-5"> Simplified Digital Marketing Growth Approach​</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center mt-5 pb-5">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="we-create-img d-flex align-items-center justify-content-center">
+                                <img src="assets/img/icons/assessment.png" alt="assessment">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="we-create-cap">
+                                <h5 class="step-h5">Step One</h5>
+                                <h3>Initial Assessment</h3>
+                                <p>We start by understanding your business goals, target audience, and current digital
+                                    presence. This helps us
+                                    tailor our strategies to align with your specific objectives.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center mt-5 pb-5">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="we-create-cap-2 text-right">
+                                <h5 class="step-h5">Step Two</h5>
+                                <h3>Strategy Development</h3>
+                                <p>Based on our assessment, we develop a clear and concise digital marketing strategy
+                                    tailored to your
+                                    business. This includes identifying key channels and tactics to maximize your online
+                                    visibility and reach.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="we-create-img d-flex align-items-center justify-content-center">
+                                <img src="assets/img/icons/strategy.png" alt="strategy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center mt-5 pb-5">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="we-create-img d-flex align-items-center justify-content-center">
+                                <img src="assets/img/icons/execution.png" alt="execution">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="we-create-cap">
+                                <h5 class="step-h5">Step Three</h5>
+                                <h3>Execution and <br>Implementation</h3>
+                                <p>Once the strategy is in place, we execute it with precision and efficiency. From creating
+                                    compelling
+                                    content to optimizing your website for search engines, we handle all aspects of digital
+                                    marketing to ensure
+                                    consistent and effective implementation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center mt-5 pb-5">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="we-create-cap-2 text-right">
+                                <h5 class="step-h5">Step Four</h5>
+                                <h3>Continuous Optimization</h3>
+                                <p>We continuously monitor the performance of your campaigns and digital assets. By
+                                    analyzing data and
+                                    metrics, we identify areas for improvement and make data-driven adjustments to optimize
+                                    results.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="we-create-img d-flex align-items-center justify-content-center">
+                                <img src="assets/img/icons/optimization.png" alt="optimization">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Generating Start -->
+            <div class="generating-area create-padding">
+                <div class="container">
+                    <!-- Section-tittle -->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-tittle text-center">
+                                <h2>Why work with Pointer IT?</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-generating d-flex mb-30">
+                                <div class="generating-icon">
+                                    <img src="assets/img/icons/success.png" alt="success"></img>
+                                </div>
+                                <div class="generating-cap">
+                                    <h4>Proven Track Record of Success</h4>
+                                    <p>
+                                        With years of experience in the digital marketing industry, we have a proven track
+                                        record of delivering exceptional
+                                        results for our clients.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-generating d-flex mb-30">
+                                <div class="generating-icon">
+                                    <img src="assets/img/icons/expert.png" alt="expert"></img>
+                                </div>
+                                <div class="generating-cap">
+                                    <h4>Strategic Expertise and Industry Insight</h4>
+                                    <p>
+                                        Our team of digital marketing experts brings a wealth of strategic expertise and
+                                        industry insight to the table.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-generating d-flex mb-30">
+                                <div class="generating-icon">
+                                    <img src="assets/img/icons/custom-solution.png" alt="custom-solution"></img>
+                                </div>
+                                <div class="generating-cap">
+                                    <h4>Customized Solutions for Your Business</h4>
+                                    <p>
+                                        We understand that every business is unique, with its own set of challenges,
+                                        objectives, and target audience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-generating d-flex mb-30">
+                                <div class="generating-icon">
+                                    <img src="assets/img/icons/comprehensive-service.png" alt="comprehensive-service"></img>
+                                </div>
+                                <div class="generating-cap">
+                                    <h4>Comprehensive Suite of Services</h4>
+                                    <p>
+                                        Whether you need help with search engine optimization (SEO), pay-per-click (PPC)
+                                        advertising, social media marketing
+                                        etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Generating End -->
+            <!-- Testimonial Start -->
+            <div class="testimonial-area section-bg create-padding">
+                <div class="container">
+                    <div class="testimonial-main">
+                        <!-- Section-tittle -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-5 col-md-8 pr-0">
+                                <div class="section-tittle text-center">
+                                    <h2>What Client Say About Us</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-10 col-md-9">
+                                <div class="h1-testimonial-active">
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial text-center">
+                                        <div class="testimonial-caption">
+                                            <div class="testimonial-top-cap">
+                                                <p>
+                                                    We are very happy with the services provided by
+                                                    Pointer IT Solutions. They are not only creating
+                                                    website but also helping us in promoting our business
+                                                    through various techniques and Social Media. They
+                                                    converted the deals also. We are now associated with
+                                                    Pointer IT Solutions for all our technology needs.
+                                                </p>
+                                            </div>
+                                            <!-- founder -->
+                                            <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                                <div class="founder-img">
+                                                    <img src="assets/img/testmonial/testimonial.png" alt="" />
+                                                </div>
+                                                <div class="founder-text">
+                                                    <span>Milind Tare</span>
+                                                    <p>Director, Tare & Associates</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial text-center">
+                                        <div class="testimonial-caption">
+                                            <div class="testimonial-top-cap">
+                                                <p>
+                                                    One of the best website developers in Nashik. Its not
+                                                    only about creating the site, but about your thought
+                                                    process behind the design. Pointer IT solutions
+                                                    through Anand and his team does this successfully. All
+                                                    the best guys.
+                                                </p>
+                                            </div>
+                                            <!-- founder -->
+                                            <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                                <div class="founder-img">
+                                                    <img src="assets/img/testmonial/testimonial.png" alt="" />
+                                                </div>
+                                                <div class="founder-text">
+                                                    <span>Bonvista Financial Planners</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial text-center">
+                                        <div class="testimonial-caption">
+                                            <div class="testimonial-top-cap">
+                                                <p>
+                                                    Pointer IT Solutions is a best Website Designing and
+                                                    Development Company in Nashik also providing services
+                                                    like Social Media Promotions, Search Engine Marketing
+                                                    and Optimizationv Mobile Application. Anand Wankhedkar
+                                                    as a director has all on line marketing expertise.
+                                                </p>
+                                            </div>
+                                            <!-- founder -->
+                                            <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                                <div class="founder-img">
+                                                    <img src="assets/img/testmonial/testimonial.png" alt="" />
+                                                </div>
+                                                <div class="founder-text">
+                                                    <span>Amit Kotkar</span>
+                                                    <p>Director, Hello Bakers</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial text-center">
+                                        <div class="testimonial-caption">
+                                            <div class="testimonial-top-cap">
+                                                <p>
+                                                    Pointer IT Solutions is a team of passionate IT
+                                                    professionals , their out of box thinking makes them
+                                                    unique. We are getting wonderful results from our
+                                                    website & social media promotion done by Pointer IT
+                                                    Solutions.
+                                                </p>
+                                            </div>
+                                            <!-- founder -->
+                                            <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                                <div class="founder-img">
+                                                    <img src="assets/img/testmonial/testimonial.png" alt="" />
+                                                </div>
+                                                <div class="founder-text">
+                                                    <span>Omprakash Rawat</span>
+                                                    <p>Director, Indian Classics</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+            <!-- Tips Triks Start -->
+            <div class="tips-triks-area create-padding" style="display: none">
+                <div class="container">
+                    <!-- Section-tittle -->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-6 col-md-8 pr-0">
+                            <div class="section-tittle text-center">
+                                <h2>Tips and Tricks From Our Experts</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-tips mb-50">
+                                <div class="tips-img">
+                                    <img src="assets/img/tips/tips_1.jpg" alt="" />
+                                </div>
+                                <div class="tips-caption">
+                                    <h4><a href="#">Twice profit than before you ever got</a></h4>
+                                    <span>Continue Reading</span>
+                                    <p>March 3, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-tips mb-50">
+                                <div class="tips-img">
+                                    <img src="assets/img/tips/tips_2.jpg" alt="" />
+                                </div>
+                                <div class="tips-caption">
+                                    <h4><a href="#">Twice profit than before you ever got</a></h4>
+                                    <span>Continue Reading</span>
+                                    <p>March 3, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-tips mb-50">
+                                <div class="tips-img">
+                                    <img src="assets/img/tips/tips_3.jpg" alt="" />
+                                </div>
+                                <div class="tips-caption">
+                                    <h4><a href="#">Twice profit than before you ever got</a></h4>
+                                    <span>Continue Reading</span>
+                                    <p>March 3, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tips Triks End -->
+            <!-- have-project Start-->
+            <div class="have-project create-padding">
+                <div class="container">
+                    <div class="haveAproject" data-background="assets/img/team/have.jpg">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-xl-7 col-lg-9 col-md-12">
+                                <div class="wantToWork-caption">
+                                    <h2>Have Business in mind?</h2>
+                                    <p>
+                                        We thrive on turning ideas into reality. Whether you're envisioning a groundbreaking
+                                        digital product, a cutting-edge
+                                        website, or a transformative business solution, we're here to bring your project to
+                                        life.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-3 col-md-12">
+                                <div class="wantToWork-btn f-right">
+                                    <a href="#" class="btn btn-ans">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- have-project End -->
+            </main>
+            <footer class="section-bg">
+                <!-- Footer Start-->
+                <div class="footer-main">
+                    <div class="footer-area">
+                        <div class="container">
+                            <div class="row d-flex justify-content-between">
+                                <div class="col-lg-5 col-md-7 col-sm-8">
+                                    <div class="single-footer-caption mb-50">
+                                        <div class="single-footer-caption mb-30">
+                                            <!-- logo -->
+                                            <div class="footer-logo">
+                                                <a href="index.html"><img src="assets/img/logo.png" alt="footer logo" /></a>
+                                            </div>
+                                            <div class="footer-tittle">
+                                                <div class="footer-pera">
+                                                    <p class="info1">
+                                                        A76, Makhmalabad Rd, Janata Raja Colony, <br />
+                                                        Nashik, Maharashtra 422003.
+                                                    </p>
+                                                    <p class="info2"><a href="mailto:support@pointeritsolutions.com">
+                                                            support@pointeritsolutions.com </a></p>
+                                                </div>
+                                                <div class="footer-social">
+                                                    <a href="#"><i class="ti-facebook"></i></a>
+                                                    <a href="#"><i class="ti-twitter"></i></a>
+                                                    <a href="#"><i class="ti-linkedin"></i></a>
+                                                    <a href="#"><i class="ti-instagram"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-5 col-sm-5">
+                                    <div class="single-footer-caption mb-50">
+                                        <div class="footer-tittle">
+                                            <h4>Our Services</h4>
+                                            <ul>
+                                                <li><a href="#">Digital Presence</a></li>
+                                                <li><a href="#">Digital Growth</a></li>
+                                                <li><a href="#">Digital Transformation</a></li>
+                                                <li><a href="#">Resources</a></li>
+                                                <li><a href="#">Growth Academy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-5 col-sm-5">
+                                    <div class="single-footer-caption mb-50">
+                                        <div class="footer-tittle">
+                                            <h4>About Us</h4>
+                                            <ul>
+                                                <li><a href="#">Who we are?</a></li>
+                                                <li><a href="#">What we do?</a></li>
+                                                <li><a href="#">How we work?</a></li>
+                                                <li><a href="#">Our work</a></li>
+                                                <li><a href="#">Work with us</a></li>
+                                                <li><a href="#">Reach us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer-bottom aera -->
+                    <div class="footer-bottom-area footer-bg">
+                        <div class="container">
+                            <div class="footer-border">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-xl-12">
+                                        <div class="footer-copy-right text-center">
+                                            <p>Copyright &copy; 2024 | All rights reserved</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <!-- Footer End-->
+        </footer>
+        <a id="scrollUp" href="#top"><i class="ti-arrow-up"></i></a>
+        <!-- JS here -->
+        
+        <!-- Jquery, Popper, Bootstrap -->
+        <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
+        
+        <!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/slick.min.js"></script>
+        <!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+        
+        <!-- Jquery Plugins, main Jquery -->
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
+</body>
 
 </html>

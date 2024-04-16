@@ -221,9 +221,9 @@
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll < 500) {
-      $("#scrollUp").removeClass("show");
+      $("#scrollUp").removeClass("show-top");
     } else {
-      $("#scrollUp").addClass("show");
+      $("#scrollUp").addClass("show-top");
     }
   });
 
