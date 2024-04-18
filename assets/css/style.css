@@ -2351,6 +2351,11 @@ hr {
   background-size: 900px;
   background-position: right 0;
 }
+.slider-area.about{
+  background-image: linear-gradient(180deg, rgba(233,250,242,0.8) 0%, rgba(233,250,242,0) 100%), url(../img/hero/about-us.jpg);
+  background-size: 1000px;
+  background-position: right 0;
+}
 .slider-area .hero__caption {
   position: relative;
   padding: 80px 0 0;
@@ -2727,14 +2732,16 @@ hr {
   display: inline-block;
   color: var(--text-primary-color);
 }
-.what-we-do .single-do .do-caption h4 {
-  font-size: 21px;
+.what-we-do .single-do .do-caption h4,
+.choose-best .single-choose .do-caption h4{
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 25px;
   position: relative;
   padding-bottom: 25px;
 }
-.what-we-do .single-do .do-caption h4::after{
+.what-we-do .single-do .do-caption h4::after,
+.choose-best .single-choose .do-caption h4::after{
   position: absolute;
   content: "";
   height: 3px;
@@ -2828,9 +2835,9 @@ hr {
 .single-do:hover .do-btn a i {
   background: #0c6c63;
 }
-.single-do.active {
+/* .single-do.active {
   box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1);
-}
+} */
 .single-do.active .do-btn a {
   color: var(--text-heading-color);
 }
@@ -3060,7 +3067,18 @@ hr {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.6;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.generating-area .generating-cap h4::after{
+  position: absolute;
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: var(--secondary-color);
+    bottom: 0px;
+    left: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .generating-area .generating-cap p {
@@ -3171,13 +3189,13 @@ hr {
   margin: 10px 0;
   display: inline-block;
 }
-.choose-best .single-choose .do-caption h4 {
-  font-size: 21px;
+/* .choose-best .single-choose .do-caption h4 {
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
   color: var(--text-heading-color);
   line-height: 1.4;
-}
+} */
 .choose-best .single-choose .do-caption h5 {
   font-size: 18px;
   font-weight: 500;
@@ -3700,7 +3718,28 @@ hr {
 }
 footer {
   padding: 100px 30px 60px;
-  background-color: var(--header-bg);
+  background-image: url(../img/hero/footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: scroll;
+  position: relative;
+}
+footer::before{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(233,250,242);
+  background: -moz-linear-gradient(180deg, rgba(233,250,242,1) 0%, rgba(233,250,242,0.8) 70%, rgba(233,250,242,0.5) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(233,250,242,1) 0%, rgba(233,250,242,0.8) 70%, rgba(233,250,242,0.5) 100%);
+  background: linear-gradient(180deg, rgba(233,250,242,1) 0%, rgba(233,250,242,0.8) 70%, rgba(233,250,242,0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9faf2",endColorstr="#e9faf2",GradientType=1);
 }
 .footer-area .footer-logo {
   margin-bottom: 30px;
