@@ -527,8 +527,15 @@ hr {
   border-radius: 50%;
   line-height: 48px;
   border: 2px solid transparent;
+}
+.show-top{
   position: fixed;
   z-index: 9999;
+}
+#scrollUp:hover,
+#scrollUp:active,
+#scrollUp:focus{
+  background-color: var(--secondary-color);
 }
 @media (max-width: 767px) {
   #scrollUp {
