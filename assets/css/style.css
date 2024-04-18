@@ -2335,8 +2335,8 @@ hr {
   background-position: right top;
 }
 .slider-area.earned-media{
-  background-image: url(../img/hero/hero-earned-media.jpg);
-  background-size: 1000px;
+  background-image: linear-gradient(180deg, rgba(233,250,242,0.9) 0%, rgba(233,250,242,0) 100%), url(../img/hero/hero-earned-media.jpg);
+  background-size: 900px;
   background-position: right top;
 }
 .slider-area.paid-media{
