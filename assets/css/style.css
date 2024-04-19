@@ -380,9 +380,8 @@ hr {
   padding-right: 50px;
 }
 .header-btn {
-  background: transparent;
-  padding: 10px 13px;
-  display: inline;
+  padding: 13px;
+  display: inline-block;
   color: #fff;
   min-width: auto;
   position: relative;
@@ -2178,6 +2177,7 @@ hr {
   margin-left: 7px;
   display: block;
   padding: 0;
+  text-align: left;
 }
 .main-header .main-menu ul ul.submenu > li > a {
   padding: 6px 10px !important;
