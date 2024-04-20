@@ -2378,6 +2378,11 @@ hr {
   background-size: 1000px;
   background-position: right 0;
 }
+.slider-area.technology{
+  background-image: url(../img/hero/hero-technology.jpg);
+  background-size: 800px;
+  background-position: right 0;
+}
 .slider-area .hero__caption {
   position: relative;
   padding: 80px 0 0;
