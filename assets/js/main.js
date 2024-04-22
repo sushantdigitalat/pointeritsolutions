@@ -1,5 +1,5 @@
 (function ($) {
-  "use strict";
+  ("use strict");
 
   /* 1. Proloder */
   $(window).on("load", function () {
@@ -203,10 +203,10 @@
   }
 
   /* 6. Nice Selectorp  */
-  var nice_Select = $("select");
-  if (nice_Select.length) {
-    nice_Select.niceSelect();
-  }
+  // var nice_Select = $("select");
+  // if (nice_Select.length) {
+  //   nice_Select.niceSelect();
+  // }
 
   /* 7.  Custom Sticky Menu  */
   $(window).on("scroll", function () {
@@ -226,8 +226,6 @@
       $("#scrollUp").addClass("show-top");
     }
   });
-
-
 
   /* 9. data-background */
   $("[data-background]").each(function () {
