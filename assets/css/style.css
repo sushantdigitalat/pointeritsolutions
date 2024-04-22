@@ -372,6 +372,15 @@ hr {
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
   transform: scaleX(0);
 }
+.apply-btn, a.apply-btn:not([href]):not([tabindex]){
+  min-width: auto;
+  font-size: 14px;
+  padding: 15px 25px;
+  color: #fff;
+}
+.apply-btn i{
+  font-size: 12px;
+}
 .container{
   max-width: 1500px;
   padding-left: 50px;
@@ -2376,6 +2385,11 @@ hr {
   background-size: 1000px;
   background-position: right 0;
 }
+.hero-section.careers{
+  background-image: linear-gradient(180deg, rgba(233,250,242,0.8) 0%, rgba(233,250,242,0) 100%), url(../img/hero/careers.jpg);
+  background-size: 1000px;
+  background-position: right 0;
+}
 .hero-section.technology{
   background-image: url(../img/hero/hero-technology.jpg);
   background-size: 800px;
@@ -2810,7 +2824,7 @@ hr {
   background-color: var(--secondary-color);
   color: #fff;
   padding: 10px 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 13px;
   font-weight: 500;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -3225,8 +3239,8 @@ hr {
   padding: 15px 0;
 }
 .our-expertise-section .single-choose .do-icon img{
-  max-width: 72px;
-  max-height: 72px;
+  max-width: 60px;
+  max-height: 60px;
   margin: 10px 0;
   display: inline-block;
 }
@@ -3688,6 +3702,18 @@ hr {
 }
 .light-green-bg {
   background-color: var(--header-bg);
+}
+.brand-bg {
+  background-color: var(--primary-color);
+}
+.badge-circle{
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 400;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  align-content: center;
 }
 .testimonial-section .h1-testimonial-active button.slick-arrow {
   position: absolute;
@@ -5004,6 +5030,75 @@ footer::before{
 .form-contact textarea {
   border-radius: 0px;
   height: 100% !important;
+}
+.modal-dialog{
+  max-width: 900px;
+}
+.modal-content .modal-header {
+  padding: 0;
+  border: none;
+}
+.modal-content .modal-header .close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  color: #fff;
+  font-size: 14px;
+}
+.modal-content .icon .ti-briefcase{
+  font-size: 5vw;
+  color: var(--secondary-color);
+}
+.text-line-height{
+  line-height: 32px;
+}
+.modal-content .form-control,
+.modal-content .custom-file-label{
+  background: transparent;
+    border: none;
+    border-radius: 0;
+    color: rgba(255, 255, 255, 0.85) !important;
+    padding: 0;
+    height: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.modal-content .custom-file-label,
+.modal-content .custom-file-input{
+  cursor: pointer;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+.custom-file-label::after{
+  height: 30px;
+  border-radius: 0;
+  font-size: 12px;
+}
+.modal-content .form-control:focus,
+.modal-content .form-control:active,
+.modal-content .custom-file-label:focus,
+.modal-content .custom-file-label:active,
+.modal-content .custom-file-label:focus-within{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+  outline: none;
+}
+.form-control::placeholder{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+.modal-content .modal-body{
+  padding: 15px 40px;
+}
+.modal-content .submit{
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.modal-content .submit:hover,
+.modal-content .submit:focus,
+.modal-content .submit:active{
+  border-color: var(--primary-color);
+  color: #fff;
 }
 .modal-message .modal-dialog {
   position: absolute;
