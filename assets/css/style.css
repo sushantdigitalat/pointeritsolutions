@@ -3221,6 +3221,9 @@ hr {
   color: var(--primary-color);
   max-height: 110px;
 }
+.our-expertise-section .single-choose .do-icon{
+  padding: 15px 0;
+}
 .our-expertise-section .single-choose .do-icon img{
   max-width: 72px;
   max-height: 72px;
