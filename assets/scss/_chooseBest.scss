@@ -1,6 +1,6 @@
 
 // what we will do start
-.choose-best{
+.our-expertise-section {
     //shape // left shape
     position: relative;
     &::before{
@@ -23,7 +23,7 @@
             display: none;
         }
     }
-    // 
+                //
     &::after{
         background-image: url(../img/shape/plus3.png);
         position: absolute;
@@ -36,14 +36,14 @@
         bottom: 0;
         @media #{$laptop}{
             display: none;
-        } 
+
         @media #{$md}{
             display: none;
         }
          @media #{$sm}{
             display: none;
         }
-        
+
         @media #{$xs}{
             display: none;
         }
@@ -55,7 +55,7 @@
                 transform: scale(1.5);
             }
         }
-    } 
+                }
     .single-choose{
         @include transition(.3s);
         padding:56px 40px 69px;
@@ -79,13 +79,13 @@
             }
             ul{
                 li{
-                    
+
                     color: #57667e;
                     margin-bottom: 17px;
                     &:last-child{
                         margin-bottom: 0;
                     }
-                   
+
                 }
             }
         }
@@ -97,7 +97,7 @@
     border: 1px solid transparent;
     .do-btn a {
         color: #7b40c0;
-        
+
         & i{
             background:#7b40c0;
         }

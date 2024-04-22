@@ -15,7 +15,7 @@
 
 
 // what we will do start
-.what-we-do{
+.what-we-section {
     .single-do{
         @include transition(.3s);
         &.active{
@@ -49,7 +49,7 @@
                 font-size: 13px;
                 font-weight: 500;
                 @include transition(.3s);
-                
+
                 i{
                     background: #c5ccd8;
                     width: 24px;
@@ -57,7 +57,7 @@
                     display: inline-block;
                     line-height: 24px;
                     color:#fff;
-                    border-radius: 50%; 
+                    border-radius: 50%;
                     margin-right: 7px;
                     @include transition(.3s);
                 }

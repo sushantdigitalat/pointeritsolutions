@@ -1,11 +1,11 @@
-.generating-area{
+.our-why-section {
     .single-generating{
         border: 1px solid#f2f2f2;
         padding: 36px 54px 25px 56px;
         border-radius: 10px;
         @media #{$md}{
             padding: 20px 20px 20px;
-        } 
+
         @media #{$sm}{
             padding: 20px 8px 20px;
         }
@@ -27,7 +27,7 @@
                 @media #{$xs}{
                    font-size:  41px;
                 }
-               
+
             }
         }
         .generating-cap{

@@ -16,15 +16,15 @@
 }
 
 // about slider
-.slider-area .hero__caption2{
+.hero-section .hero__caption2 {
     &::before{
         display: none;
-    } 
+    
     &::after{
         display: none;
     }
 }
-.slider-area .hero__img2 img {
+.hero-section .hero__img2 img {
     margin-left: -51px;
     padding-top: 50px;
 }
@@ -37,10 +37,10 @@
         z-index: -1;
         @media #{$laptop}{
             // display: none;
-        } 
+        
         @media #{$lg}{
             display: none;
-        } 
+        
          @media #{$md}{
             display: none;
         }
@@ -58,7 +58,7 @@
         z-index: -1;
         @media #{$laptop}{
             // display: none;
-        } 
+        
         @media #{$lg}{
             display: none;
         }
@@ -76,15 +76,15 @@
 }
 
 
-.slider-area{
+.hero-section {
     margin-top: -1px;
     .hero__caption{
-       
+
         @media #{$xs}{
             padding-top: 17px;
         }
         position: relative;
-        // 
+                //
         &::before{
             background-image: url(../img/shape/plus1.png);
             position: absolute;
@@ -98,14 +98,14 @@
             top:-70px ;
             @media #{$laptop}{
                 top:-30px ;
-            } 
+            
             @media #{$md}{
                 top:-30px ;
             }
              @media #{$sm}{
                 top:-30px ;
             }
-            
+
             @media #{$xs}{
                 left: 248px;
                 top: -10px;
@@ -118,7 +118,7 @@
                     transform: scale(1.5);
                 }
             }
-        }  
+                }
         &::after{
             background-image: url(../img/shape/plus2.png);
             position: absolute;
@@ -147,7 +147,7 @@
                 }
             }
         }
-        
+
         & h1{
             font-size: 65px;
             font-weight: 700;
@@ -196,7 +196,7 @@
 
 
 // Another Hero Page
-.slider-area{
+.hero-section {
     .hero-cap{
         & h2{
             color: #fff;

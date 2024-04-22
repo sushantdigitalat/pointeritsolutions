@@ -44,7 +44,7 @@
 
 
 // what we will do start
-.what-we-do{
+.what-we-section {
     //shape // left shape
     position: relative;
     &::before{
@@ -61,7 +61,7 @@
         height: 482px;
         @media #{$md}{
 			display: none;
-        } 
+        
          @media #{$sm}{
 			display: none;
 		}
@@ -107,12 +107,12 @@
         }
         @media #{$sm}{
 			padding: 41px 17px 63px;
-        } 
+        
         @media #{$xs}{
 			padding: 41px 17px 63px;
 		}
 
-       
+
         border-radius: 6px;
         .do-icon{
             span{
@@ -144,7 +144,7 @@
                 font-size: 13px;
                 font-weight: 500;
                 @include transition(.3s);
-                
+
                 i{
                     background: #c5ccd8;
                     width: 24px;
@@ -152,7 +152,7 @@
                     display: inline-block;
                     line-height: 24px;
                     color:#fff;
-                    border-radius: 50%; 
+                    border-radius: 50%;
                     margin-right: 7px;
                     @include transition(.3s);
                 }
@@ -165,7 +165,7 @@
     box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1);
     .do-btn a {
         color: #7b40c0;
-        
+
         & i{
             background:#7b40c0;
         }

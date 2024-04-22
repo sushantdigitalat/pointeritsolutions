@@ -317,7 +317,7 @@ hr {
 		transition-timing-function: ease;
 		transform-origin: 0 0;
 		transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
-		// 
+		//
 		transform: scaleX(0);
 	}
 }
@@ -354,7 +354,7 @@ hr {
 
 .btn.focus, .btn:focus {
 	outline: 0;
-	box-shadow:none; 
+	box-shadow: none;
 }
 .hero-btn{
 	padding: 30px 56px;
@@ -397,7 +397,7 @@ hr {
 		transition-timing-function: ease;
 		transform-origin: 0 0;
 		transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
-		// 
+		//
 		transform: scaleY(0);
 	}
 }
@@ -440,7 +440,7 @@ hr {
 		transition-timing-function: ease;
 		transform-origin: 0 0;
 		transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
-		// 
+		//
 		transform: scaleX(0);
 	}
 }
@@ -448,7 +448,7 @@ hr {
 	transform: scaleY(1);
 	order: 2px solid transparent;
 	color:red;
-	
+
 }
 
 
@@ -581,7 +581,7 @@ hr {
 	100% {
 	  -webkit-transform: translateY(-20px);
 	  transform: translateY(-20px); } }
-	  
+
 /* heartbeat */
 	.heartbeat {
 		animation: heartbeat 1s infinite alternate;
@@ -798,7 +798,7 @@ hr {
 			padding-top: 30px;
 			padding-bottom: 30px;
 		}
-	}	
+		}
 	.visite-padding2{
 		padding-top: 160px;
 		padding-bottom: 170px;
@@ -822,7 +822,7 @@ hr {
 			padding-top: 30px;
 			padding-bottom: 35px;
 		}
-	}	
+		}
 	.choose-padding{
 		padding-top: 160px;
 		@media #{$laptop}{
@@ -841,7 +841,7 @@ hr {
 			padding-top: 30px;
 		}
 	}
-	.create-padding{
+		.section-padding {
 		padding-top: 240px;
 		padding-bottom: 190px;
 		@media #{$laptop}{
@@ -938,7 +938,7 @@ hr {
 			padding-bottom: 90px;
 		}
 	}
-	
+
 
 	.testimonial-padding{
 		padding-top: 157px;
@@ -969,7 +969,7 @@ hr {
 	.footer-padding{
 		padding-top: 200px;
 		padding-bottom: 15px;
-	
+
 		@media #{$laptop}{
 			padding-top: 200px;
 			padding-bottom: 15px;
