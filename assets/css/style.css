@@ -6613,7 +6613,8 @@ del {
 }
 
 .features .feture-tabs .tab-content{
-  max-width: 80%;
+  max-width: 100%;
+  width: 1070px;
   margin: auto;
   padding: 0 15px;
 }
