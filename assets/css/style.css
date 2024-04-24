@@ -2038,6 +2038,7 @@ a.apply-btn:not([href]):not([tabindex]) {
 .hero-section .hero__caption {
   position: relative;
   padding: 80px 0 0;
+  z-index: 2;
 }
 .hero-section .hero__caption.inner {
   padding: 180px 0 60px;
@@ -5703,6 +5704,8 @@ del {
 .stats-counter-wrap {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  z-index: 3;
 }
 .stats-div {
   background-color: var(--primary-color);
@@ -5788,6 +5791,12 @@ del {
   }
   .card-body .col-lg-2{
     padding: 20px 0 0;
+  }
+  .hero-section.growth,
+  .hero-section.earned-media,
+  .hero-section.paid-media,
+  .hero-section.technology{
+    background-size: 100vh;
   }
 }
 @media (max-width: 800px) {
