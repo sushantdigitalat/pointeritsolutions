@@ -2204,7 +2204,8 @@ a.apply-btn:not([href]):not([tabindex]) {
   width: 243px;
   height: 482px;
 }
-.what-we-section .row .col-lg-3 {
+.what-we-section .row .col-lg-3,
+.what-we-section .row .col-lg-4 {
   display: flex;
 }
 .what-we-section::after {
@@ -5744,7 +5745,10 @@ del {
     font-size: 18px;
   }
   .header-area .slicknav_btn{
-    top: -30px;
+    top: -45px;
+  }
+  .sticky-bar .slicknav_btn{
+    top: -36px;
   }
   .mobile_menu.d-lg-none.d-block{
     display: block !important;
@@ -6058,13 +6062,19 @@ del {
     padding: 10px 20px;
   }
   .header-area .slicknav_btn {
-    top: -40px;
+    top: -50px;
+  }
+  .sticky-bar .slicknav_btn{
+    top: -44px;
   }
   .sticky-bar{
     padding: 12px 0;
   }
   .features .feture-tabs .nav-tabs{
     justify-content: space-around;
+  }
+  .hero-section .hero__caption h5{
+    font-size: 18px;
   }
 }
 @media (max-width: 600px) {
