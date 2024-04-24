@@ -5744,10 +5744,11 @@ del {
     font-size: 18px;
   }
   .header-area .slicknav_btn{
-    top: -24px;
+    top: -30px;
   }
   .mobile_menu.d-lg-none.d-block{
     display: block !important;
+    top: 6px;
   }
   .main-menu.d-none.d-lg-block,
   .header-right-btn.d-none.d-lg-block{
@@ -6061,6 +6062,9 @@ del {
   }
   .sticky-bar{
     padding: 12px 0;
+  }
+  .features .feture-tabs .nav-tabs{
+    justify-content: space-around;
   }
 }
 @media (max-width: 600px) {
