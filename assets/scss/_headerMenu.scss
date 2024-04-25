@@ -41,7 +41,7 @@
                     font-size: 16px;
                     @include transition(.3s);
                     text-transform: capitalize;
-                   
+
                 }
                 &:hover{
                     & > a{
@@ -77,13 +77,13 @@
                             // @include transition(.4s);
                         }
                     }
-                } 
+                                                                                                                                                                                                                                                                }
             }
         }
     }
     .logo{
         & img{
-            
+
         }
     }
 }
@@ -110,7 +110,7 @@
     opacity: 1;
     top: 100%;
 }
- 
+
 .top-bg{
 	background:#002d5b;
 }
@@ -124,10 +124,10 @@
 	padding: 26px 20px;
 }
 
-.slicknav_menu .slicknav_icon-bar {
+.slicknav-menu .slicknav_icon-bar {
 	background-color: $theme-color !important;
 }
-.slicknav_nav {
+.slicknav-nav {
 	margin-top: 0px;
 }
 
@@ -137,18 +137,18 @@
             padding: 20px 20px;
         }
     }
-    .header-area .slicknav_btn {
+                .header-area .slicknav-btn {
         top: -36px;
     }
-    .slicknav_menu .slicknav_nav a:hover {
+                                                                .slicknav-menu .slicknav-nav a:hover {
         background: transparent;
         color: $theme-color;
     }
-    .slicknav_menu {
+                                                                .slicknav-menu {
         background: transparent;
         margin-top: 5px !important;
     }
-    .mobile_menu {
+        .mobile-menu {
         position: absolute;
         right: 0px;
         width: 100%;

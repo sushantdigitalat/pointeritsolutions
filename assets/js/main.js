@@ -10,11 +10,11 @@
   });
 
   /* 2. slick Nav */
-  // mobile_menu
+  // mobile-menu
   var menu = $("ul#navigation");
   if (menu.length) {
     menu.slicknav({
-      prependTo: ".mobile_menu",
+      prependTo: ".mobile-menu",
       closedSymbol: "+",
       openedSymbol: "-",
     });
