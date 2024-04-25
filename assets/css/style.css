@@ -1782,7 +1782,8 @@ a.apply-btn:not([href]):not([tabindex]) {
 .main-header .main-menu ul li a i {
   font-size: 12px;
 }
-.main-header .main-menu ul li:hover > a {
+.main-header .main-menu ul li:hover > a,
+.main-header .main-menu ul li > a.active{
   color: var(--primary-color);
 }
 .main-header .main-menu ul ul.submenu {
@@ -1814,7 +1815,8 @@ a.apply-btn:not([href]):not([tabindex]) {
   color: #0b1c39;
   text-transform: capitalize;
 }
-.main-header .main-menu ul ul.submenu > li > a:hover {
+.main-header .main-menu ul ul.submenu > li > a:hover,
+.main-header .main-menu ul ul.submenu > li > a.active {
   color: var(--primary-color);
   background: none;
 }
@@ -3068,7 +3070,7 @@ footer::before {
   }
 } */
 .footer-bottom-area .footer-copy-right p {
-  color: #888888;
+  color: var(--secondary-color);
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
@@ -5297,219 +5299,6 @@ del {
 
 #map iframe {
   width: 100%;
-}
-
-/*--------------------------------------
- Sets the actionable area for the gaadiexp
- including a label for usability
---------------------------------------*/
-.content-box {
-  margin-top: 20px;
-}
-.gaadiexp,
-.gaadiexp:after,
-.gaadiexp *,
-.gaadiexp *:before,
-.gaadiexp *:after,
-.header-nav *,
-.header-nav *:before,
-.header-nav *:after {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.gaadiexp {
-  cursor: pointer;
-  height: 60px;
-  margin-bottom: 0;
-  width: 60px;
-  z-index: 9001;
-  right: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  display: none;
-}
-
-.gaadiexp:after {
-  bottom: 7px;
-  color: var(--secondary-color);
-  content: "Menu";
-  font-size: 13px;
-  font-weight: 300;
-  left: 0;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  display: none;
-}
-
-/*--------------------------------------
- Creates the look of the gaadiexp icon
- using the inner span and pseudo-elements
---------------------------------------*/
-
-.gaadiexp span,
-.gaadiexp span:before,
-.gaadiexp span:after {
-  background: #0c6c63;
-  border-radius: 0.2em;
-  height: 3px;
-  left: 10px;
-  position: absolute;
-  top: 40px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 30px;
-}
-
-/* Reset the left and create the pseudo-element */
-
-.gaadiexp span:before,
-.gaadiexp span:after {
-  content: "";
-  left: 0;
-}
-
-/* Top bar position */
-
-.gaadiexp span:before {
-  top: -8px;
-}
-
-/* Bottom bar position */
-
-.gaadiexp span:after {
-  top: 8px;
-}
-
-/* Get rid of more on action (IE9 or higher) */
-
-.gaadiexp-check:checked + .gaadiexp:after {
-  content: "";
-}
-
-/* Get rid of the middle bar on action (IE9 or higher) */
-
-.gaadiexp-check:checked + .gaadiexp span {
-  height: 0;
-  width: 0;
-}
-
-/* Moves the top and bottom bars to the middle on action (IE9 or higher) */
-
-.gaadiexp-check:checked + .gaadiexp span:before,
-.gaadiexp-check:checked + .gaadiexp span:after {
-  top: 6px;
-}
-
-/* Rotates the top bar on action with full browser support (IE9 or higher) */
-
-.gaadiexp-check:checked + .gaadiexp span:before {
-  -webkit-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
-}
-
-/* Rotates the bottom bar on action with full browser support (IE9 or higher) */
-
-.gaadiexp-check:checked + .gaadiexp span:after {
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(225deg);
-  transform: rotate(-225deg);
-}
-
-#mobile-nav:focus + .gaadiexp,
-.gaadiexp:focus,
-.gaadiexp:hover {
-  background: rgba(0, 136, 204, 0.9);
-}
-
-.gaadiexp-check:checked + .gaadiexp:after {
-  bottom: 18px;
-  content: "";
-  font-size: 20px;
-  padding-left: 30px;
-}
-
-#mobile-nav {
-  left: -9999px;
-  position: fixed;
-  top: 0;
-}
-
-.header-nav ul li a:active,
-.header-nav ul li a:focus,
-.header-nav ul li a:hover,
-#mobile-nav:focus + .gaadiexp,
-.gaadiexp:focus,
-.gaadiexp:hover {
-  background: none;
-  outline: none;
-  border-bottom: none;
-}
-
-/* .header-nav {
-    height: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 9000;
-} */
-
-.header-nav ul {
-  background: #e9faf2;
-  height: calc(100vh - 60px);
-  list-style: none;
-  margin: 0;
-  overflow-y: auto;
-  padding: 20px;
-  position: fixed;
-  /* -webkit-transform: translateX(100%);
-    transform: translateX(100%); */
-  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  width: 300px;
-  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.075);
-  top: 84px;
-  z-index: 1;
-  right: -360px;
-}
-
-.gaadiexp-check:checked ~ .header-nav ul {
-  /* -webkit-transform: translateX(-160px);
-    transform: translateX(-160px); */
-  right: 0;
-}
-
-.header-nav ul li {
-  float: left;
-  position: relative;
-  width: 100%;
-}
-
-.header-nav ul li a {
-  color: var(--secondary-color);
-  display: block;
-  float: left;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.75px;
-  line-height: 24px;
-  margin-left: 0;
-  overflow: hidden;
-  padding: 12px 60px 12px 12px;
-  position: relative;
-  text-decoration: none;
-  width: 100%;
-  border: none;
-  background: none;
-}
-.header-nav ul li a:hover,
-.header-nav ul li a:focus,
-.header-nav ul li a:active {
-  color: var(--primary-color);
 }
 
 /*--------------------------------------------------------------
