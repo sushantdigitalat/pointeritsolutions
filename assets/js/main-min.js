@@ -29,7 +29,7 @@
           e("#wrapper").toggleClass("toggled");
         });
     }),
-    $(".slicknav_nav li:last-child").after(
+    $(".slicknav_nav > li:last-child").after(
       '<li><a href="become-our-client.html" class="btn header-btn">Become Our Client <i class="ti-angle-right"></i></a></li>'
     );
   var s = e(".h1-testimonial-active");
