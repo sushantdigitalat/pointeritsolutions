@@ -2807,15 +2807,16 @@ footer::before {
 .footer-area .footer-para .info1 {
   margin-bottom: 10px;
   line-height: 1.8;
-  font-size: 13px;
+  font-size: 15px;
 }
 .footer-area .footer-para .info2 {
   margin-bottom: 50px;
   line-height: 1.8;
-  font-size: 13px;
+  font-size: 15px;
 }
 .footer-area .footer-para .info2 a {
   color: var(--primary-color);
+  font-size: 15px;
 }
 .footer-area .footer-para.footer-para2 p {
   padding: 0;
