@@ -1748,7 +1748,8 @@ a.apply-btn:not([href]):not([tabindex]) {
   font-size: 12px;
 }
 .main-header .main-menu ul li:hover > a,
-.main-header .main-menu ul li > a.active {
+.main-header .main-menu ul li > a.active,
+.main-header .main-menu ul li.active > a {
   color: var(--primary-color);
 }
 .main-header .main-menu ul ul.submenu {
@@ -1850,8 +1851,8 @@ a.apply-btn:not([href]):not([tabindex]) {
   min-height: 100vh;
 }
 .hero-height.services {
-    min-height: auto;
-  }
+  min-height: auto;
+}
 .hero-section .hero-caption2::before {
   display: none;
 }
@@ -2807,15 +2808,16 @@ footer::before {
 .footer-area .footer-para .info1 {
   margin-bottom: 10px;
   line-height: 1.8;
-  font-size: 13px;
+  font-size: 15px;
 }
 .footer-area .footer-para .info2 {
   margin-bottom: 50px;
   line-height: 1.8;
-  font-size: 13px;
+  font-size: 15px;
 }
 .footer-area .footer-para .info2 a {
   color: var(--primary-color);
+  font-size: 15px;
 }
 .footer-area .footer-para.footer-para2 p {
   padding: 0;
@@ -6454,6 +6456,20 @@ del {
   .slicknav_btn {
     top: -15px;
   }
+  .slicknav_nav li {
+    display: none;
+  }
+  .slicknav_nav li:last-child {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .slicknav_nav li {
+    display: none;
+  }
+  .slicknav_nav li:last-child {
+    display: block;
+  }
 }
 @font-face {
   font-family: "themify";
@@ -7683,4 +7699,14 @@ del {
 }
 .slide-up {
   display: none;
+}
+
+
+/** css for landing page **/
+
+.title-h1{
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--primary-color);
+    line-height: 60px;
 }
